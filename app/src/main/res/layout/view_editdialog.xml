@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center_horizontal"
+    android:layout_marginTop="100dp"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/view_editdialog_content"
+            style="@style/TextSize16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/view_editdialog_edittext"
+            style="@style/TextSize16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_edittext_middle"
+            android:hint="请输入证件号码"
+            android:textColorHint="@color/gray_light"
+            android:padding="3dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/view_editdialog_errormsg"
+            style="@style/TextSize16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/view_editdialog_btn_sure"
+            style="@style/TextSize16"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="@color/blue" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@color/line_stroke_color" />
+
+        <Button
+            android:id="@+id/view_editdialog_btn_cancel"
+            style="@style/TextSize16"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="@color/gray_dark" />
+    </LinearLayout>
+
+</LinearLayout>

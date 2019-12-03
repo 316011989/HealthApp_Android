@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/home_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/green_common"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/home_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/btn_back"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/home_btn_left_view"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/home_titile1"
+            style="@style/TextSize19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/home_btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/home_btn_right"
+            android:background="@mipmap/btn_filter"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/home_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/btn_search"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/appointment_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none"></HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/login_fl_continer"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:background="@color/white"></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_light" />
+
+    <LinearLayout
+        android:id="@+id/home_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/home_tab1_cb"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@drawable/universal_tab1_selector4cb"
+            android:text="@string/default_string"
+            android:textColor="@color/homepage_tab1_selector4tv" />
+
+        <Button
+            android:id="@+id/home_tab2_cb"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@drawable/universal_tab2_selector4cb"
+            android:text="@string/default_string"
+            android:textColor="@color/homepage_tab1_selector4tv" />
+
+        <Button
+            android:id="@+id/home_tab3_cb"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@drawable/universal_tab3_selector4cb"
+            android:text="@string/default_string"
+            android:textColor="@color/homepage_tab1_selector4tv" />
+
+        <Button
+            android:id="@+id/home_tab4_cb"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@drawable/universal_tab4_selector4cb"
+            android:text="@string/default_string"
+            android:textColor="@color/homepage_tab1_selector4tv"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/home_tab5_cb"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@drawable/universal_tab5_selector4cb"
+            android:text="@string/default_string"
+            android:textColor="@color/homepage_tab1_selector4tv" />
+    </LinearLayout>
+
+</LinearLayout>

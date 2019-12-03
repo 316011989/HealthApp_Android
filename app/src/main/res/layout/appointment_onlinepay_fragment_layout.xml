@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pay_orderfee_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextSize14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawablePadding="20dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:text="金额"
+            android:textColor="@color/titleColor" />
+
+        <TextView
+            android:id="@+id/pay_orderfee"
+            style="@style/TextSize19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawablePadding="20dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/pay_orderpayway_"
+        style="@style/TextSize14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_orderfee_ll"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:drawablePadding="20dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="支付方式"
+        android:textColor="@color/titleColor" />
+
+    <RelativeLayout
+        android:id="@+id/pay_orderpayway_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_orderpayway_"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/pay_way1_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/checked"></ImageView>
+
+        <ImageView
+            style="@style/TextSize19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/pay_wx"
+            android:gravity="center_vertical"
+            android:textColor="@color/titleColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pay_orderpayway_zfb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_orderpayway_wx"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/pay_way2_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/not_checked"></ImageView>
+
+        <ImageView
+            style="@style/TextSize19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/pay_zfb"
+            android:gravity="center_vertical"
+            android:textColor="@color/titleColor" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_topay"
+        style="@style/TextSize16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_orderpayway_zfb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_button_selector"
+        android:padding="10dp"
+        android:text="立即支付"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

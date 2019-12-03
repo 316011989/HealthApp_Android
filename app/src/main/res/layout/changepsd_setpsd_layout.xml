@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        style="@style/TextSize14"
+        android:layout_marginLeft="10dip"
+        android:text="@string/mobile_commit_success"
+        android:textColor="@color/forget_psd_color" />
+
+    <EditText
+        android:id="@+id/changepsd_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/login_button_middle"
+        android:gravity="center_vertical"
+        android:hint="@string/login_psw1"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        style="@style/TextSize16"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/changepsd_submit"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/submit_str" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+
+        <TextView
+            android:id="@+id/changepsd_login"
+            style="@style/TextSize14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/login_str"
+            android:textColor="@color/login_next_color" />
+    </FrameLayout>
+
+</LinearLayout>

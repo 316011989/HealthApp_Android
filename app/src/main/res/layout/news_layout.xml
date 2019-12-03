@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/category_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip" >
+
+        <ImageView
+            android:id="@+id/icon_category"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@mipmap/btn_expand" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/icon_category" >
+            <com.pact.healthapp.components.news.CategoryTabStrip
+                android:id="@+id/news_category_strip"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:clipToPadding="false"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/login_login_account"
+        style="@style/TextSize16"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_edittext_top"
+        android:hint="@string/account_hint_str"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/login_login_password"
+        style="@style/TextSize16"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login_login_account"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/login_edittext_bottom"
+        android:gravity="center_vertical"
+        android:hint="@string/psd_hint_str"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/login_login_login"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login_login_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/login_str" />
+
+    <TextView
+        android:id="@+id/login_bt_forget_password"
+        style="@style/TextSize14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/login_login_login"
+        android:layout_marginRight="5dip"
+        android:padding="15dip"
+        android:text="@string/forget_pwd_str"
+        android:textColor="@color/login_next_color" />
+
+    <LinearLayout
+        android:id="@+id/login_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/login_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/login_spread_top"
+                style="@style/TextSize14"
+                android:layout_width="11dp"
+                android:layout_height="7dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp" />
+            <!--android:background="@drawable/login_spread"-->
+
+            <TextView
+                style="@style/TextSize14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="top|center_horizontal"
+                android:paddingBottom="5dp"
+                android:text="@string/user_other_account"
+                android:textColor="@color/forget_psd_color" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/login_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#FFFFFF"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="2" >
+        </GridView>
+    </LinearLayout>
+
+</RelativeLayout>

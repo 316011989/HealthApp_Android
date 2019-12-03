@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_light" />
+
+    <LinearLayout
+        android:id="@+id/organization_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/organization_center_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:button="@drawable/appointment_rb_selector" />
+
+        <TextView
+            android:id="@+id/organization_center_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="@color/titleColor"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/organization_center"
+        android:background="@color/gray_light" />
+
+    <TextView
+        android:id="@+id/organization_center_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/organization_center"
+        android:drawableLeft="@mipmap/org_location"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:textColor="@color/gray_dark"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/organization_center"
+        android:layout_margin="10dp"
+        android:background="@mipmap/arrow_right"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/organization_center_address"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/line_dash"
+        android:layerType="software" />
+
+    <TextView
+        android:id="@+id/organization_center_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/organization_center_address"
+        android:drawableLeft="@mipmap/org_clock"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:textColor="@color/gray_dark"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/organization_center_time"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/line_dash"
+        android:layerType="software" />
+
+    <TextView
+        android:id="@+id/organization_center_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/organization_center_time"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/org_phone"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:textColor="@color/gray_dark"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/organization_center_time"
+        android:layout_margin="10dp"
+        android:background="@mipmap/arrow_right"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/organization_center_phone"
+        android:background="@color/gray_light" />
+
+</RelativeLayout>

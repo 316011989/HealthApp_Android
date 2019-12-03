@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp"
+            android:background="@color/gray_backgroud"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/chocie_date_months"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:scrollbars="none">
+
+                <RadioGroup
+                    android:id="@+id/chocie_date_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:orientation="horizontal">
+
+                </RadioGroup>
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/chocie_date_weeks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chocie_date_months"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="日"
+                    android:textColor="@color/green_common"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="一"
+                    android:textColor="@color/titleColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="二"
+                    android:textColor="@color/titleColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="三"
+                    android:textColor="@color/titleColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="四"
+                    android:textColor="@color/titleColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="五"
+                    android:textColor="@color/titleColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="六"
+                    android:textColor="@color/green_common"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <com.pact.healthapp.components.appointment.MyGridView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/chocie_date_weeks"
+                android:background="@color/white"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:numColumns="7"
+                android:stretchMode="columnWidth" />
+
+            <TextView
+                android:id="@+id/chocie_date_tip"
+                style="@style/TextSize14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/day"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="可选时间段"
+                android:textColor="@color/titleColor" />
+
+            <com.pact.healthapp.components.appointment.MyGridView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chocie_date_tip"
+                android:background="@color/white"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:stretchMode="columnWidth" />
+
+            <LinearLayout
+                android:id="@+id/serviceorder_changedate_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/serviceorder_changedate_tv"
+                    style="@style/TextSize14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@mipmap/alert_img"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="原预约日期2015-12-24 08：00-09：00"
+                    android:textColor="@color/gray_dark" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_light" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/appointment_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#4A4A4A"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/appointment_makesure_next"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/next"
+            android:textSize="14dp" />
+    </LinearLayout>
+</RelativeLayout>

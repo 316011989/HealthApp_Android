@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <ImageView
+        android:id="@+id/news_item_iv"
+        android:layout_width="100dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dip"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/news_item_title"
+        style="@style/TextSize16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@id/news_item_iv"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/news_item_time"
+        style="@style/TextSize12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_item_title"
+        android:layout_marginBottom="8dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@id/news_item_iv"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

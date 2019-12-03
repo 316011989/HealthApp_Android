@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.pact.healthapp.view.MultipleRadioGroup
+        android:id="@+id/add_accountr_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb1"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/appointment_certtype1"
+                android:gravity="center"
+                android:text="身份证"
+                android:textColor="@color/black" />
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb2"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/appointment_certtype2"
+                android:gravity="center"
+                android:text="凭证号"
+                android:textColor="@color/black" />
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb3"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/appointment_certtype3"
+                android:gravity="center"
+                android:text="新华体检卡"
+                android:textColor="@color/black" />
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb4"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/appointment_certtype4"
+                android:gravity="center"
+                android:text="护照"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb5"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/appointment_certtype5"
+                android:gravity="center"
+                android:text="新华保险单"
+                android:textColor="@color/black" />
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb6"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/appointment_certtype6"
+                android:gravity="center"
+                android:text="军官证"
+                android:textColor="@color/black" />
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb7"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/appointment_certtype7"
+                android:gravity="center"
+                android:text="医保卡"
+                android:textColor="@color/black" />
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb8"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/appointment_certtype8"
+                android:gravity="center"
+                android:text="唯一号"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb9"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/appointment_certtype9"
+                android:gravity="center"
+                android:text="员工卡"
+                android:textColor="@color/black" />
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb10"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/appointment_certtype10"
+                android:gravity="center"
+                android:text="新华储值卡"
+                android:textColor="@color/black" />
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb11"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/defalt_pic_width"
+                android:gravity="center"
+                android:text="新华储值卡"
+                android:textColor="@color/black"
+                android:visibility="invisible" />
+
+            <com.pact.healthapp.components.appointment.MyRadioButton
+                android:id="@+id/add_account_rb12"
+                style="@style/TextSize12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/defalt_pic_width"
+                android:gravity="center"
+                android:text="新华储值卡"
+                android:textColor="@color/black"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </com.pact.healthapp.view.MultipleRadioGroup>
+
+    <EditText
+        android:id="@+id/add_account_certypenum"
+        style="@style/TextSize16"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/login_edittext_top"
+        android:hint="@string/account_hint_str"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/add_account_btn"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:button="@null"
+        android:padding="10dp"
+        android:text="新增" />
+
+</LinearLayout>

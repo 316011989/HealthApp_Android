@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/chocie_date_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_border_shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/chocie_date_time"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:00-8:00"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/chocie_date_num"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可约20人"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

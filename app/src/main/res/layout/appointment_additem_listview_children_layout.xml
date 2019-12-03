@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/addItem_iteminfos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/addItem_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/not_checked" />
+
+        <TextView
+            android:id="@+id/addItem_name"
+            style="@style/TextSize14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/addItem_checked"
+            android:singleLine="true"
+            android:text="体检项名称"
+            android:textColor="@color/gray_dark" />
+
+        <TextView
+            android:id="@+id/addItem_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addItem_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/addItem_checked"
+            android:text="体检项介绍"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/addItem_prices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addItem_iteminfos"
+        android:background="@color/white"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/addItem_price_market"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxLines="3"
+            android:textColor="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/addItem_price_sell"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/addItem_pay_object"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/addItem_childdivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/addItem_prices"
+        android:background="@color/white" />
+
+</RelativeLayout>

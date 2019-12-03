@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:orientation="vertical">-->
+
+    <RelativeLayout
+        android:id="@+id/serverorder_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:id="@+id/appointment_tv1"
+            style="@style/appointment_previewfragment_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务单号："
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/appointment_serviceorder_num"
+            style="@style/appointment_previewfragment_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/appointment_tv1"
+            android:text="123456"
+            android:textColor="@color/gray_dark" />
+
+        <TextView
+            android:id="@+id/appointment_remind_message"
+            style="@style/appointment_previewfragment_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointment_tv1"
+            android:layout_marginLeft="10dp"
+            android:text="提醒：xx.xx元未支付"
+            android:textColor="@color/orange" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/appointment_remind_message"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray_light" />
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:paddingBottom="55dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<View-->
+    <!--android:id="@+id/appointment_divider"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="@color/gray_light" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_tv3"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:gravity="left"-->
+    <!--android:text="检前须知"-->
+    <!--android:textColor="@color/gray_dark"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_attention_matters_1"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="@string/attention_matters_1"-->
+    <!--android:textColor="@color/gray_dark" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_attention_matters_2"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="@string/attention_matters_2"-->
+    <!--android:textColor="@color/gray_dark" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_attention_matters_3"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="@string/attention_matters_3"-->
+    <!--android:textColor="@color/gray_dark" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_attention_matters_4"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="@string/attention_matters_4"-->
+    <!--android:textColor="@color/gray_dark" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_attention_matters_5"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:text="@string/attention_matters_5"-->
+    <!--android:textColor="@color/gray_dark"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_attention_matters_6"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="@string/attention_matters_6"-->
+    <!--android:textColor="@color/gray_dark" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_attention_matters_7"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="@string/attention_matters_7"-->
+    <!--android:textColor="@color/gray_dark" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_attention_matters_8"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="@string/attention_matters_8"-->
+    <!--android:textColor="@color/gray_dark" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_attention_matters_9"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="@string/attention_matters_9"-->
+    <!--android:textColor="@color/gray_dark" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/appointment_attention_matters_10"-->
+    <!--style="@style/appointment_previewfragment_text_style"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="@string/attention_matters_10"-->
+    <!--android:textColor="@color/gray_dark" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="@color/gray_light" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <WebView
+        android:id="@+id/appointment_attention_matters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/serverorder_info"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+    </WebView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#4A4A4A"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_pay"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cancel_appointment_btn_selector"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="去支付"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_completed"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:text="完成"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+</RelativeLayout>

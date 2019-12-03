@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <RadioButton
+                android:id="@+id/checkupset_item_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@drawable/appointment_rb_selector" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/checkupset_item_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/defalt_pic"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/checkupset_item_packagename"
+                style="@style/TextSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/default_string"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/checkupset_item_tv3"
+                style="@style/TextSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="30dp"
+                android:text="@string/paymethod"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/checkupset_item_payable"
+                style="@style/TextSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/checkupset_item_tv3"
+                android:layout_toRightOf="@id/checkupset_item_tv3"
+                android:text="@string/default_string"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/checkupset_item_payed"
+                style="@style/TextSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/checkupset_item_tv3"
+                android:layout_alignParentRight="true"
+                android:text="@string/default_string"
+                android:textColor="@color/orange_light" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light" />
+
+</LinearLayout>

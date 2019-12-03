@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/gray_backgroud">
+
+        <TextView
+            android:id="@+id/event_apply_num"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="已报名1000人  "
+            android:textColor="@color/gray_dark" />
+
+        <TextView
+            android:id="@+id/event_remaining_time"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:textColor="@color/gray_dark" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/event_title"
+        style="@style/TextSize19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="希望工程——爱心捐助活动"
+        android:textColor="@color/titleColor" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/line_dash"
+        android:layerType="software" />
+
+    <TextView
+        android:id="@+id/event_time"
+        style="@style/TextSize12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/time"
+        android:padding="2dp"
+        android:text="活动时间：2015.9.1---2015.9.10"
+        android:textColor="@color/gray_dark" />
+
+    <TextView
+        android:id="@+id/event_place"
+        style="@style/TextSize12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:drawableLeft="@mipmap/location"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="活动地点：北京市 朝阳区"
+        android:textColor="@color/gray_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/event_posterImg"
+            style="@style/TextSize24"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextSize14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="活动详情：  "
+            android:textColor="@color/gray_dark" />
+
+        <TextView
+            android:id="@+id/event_content"
+            style="@style/TextSize14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:textColor="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/gray_backgroud"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/event_collect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/collect_btn_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="取消收藏"
+            android:textColor="@color/gray_dark"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/event_apply"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="4"
+            android:text="马上报名"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

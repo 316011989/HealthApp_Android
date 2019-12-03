@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/changepsd_registration_account"
+        style="@style/TextSize16"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/login_edittext_top"
+        android:hint="@string/login_account1"
+        android:inputType="textEmailAddress|number"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/login_edittext_bottom" >
+
+        <EditText
+            android:id="@+id/changepsd_setsms"
+            style="@style/TextSize16"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/login_setsms"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/changepsd_getsms"
+            style="@style/TextSize14"
+            android:layout_width="130dp"
+            android:layout_height="37dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/login_button_middle"
+            android:gravity="center"
+            android:text="@string/send_verify_code_str"
+            android:textColor="@color/green_common" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/changepsd_submit"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:padding="10dp"
+        android:text="@string/next" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/login_login"
+            style="@style/TextSize14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/login_str"
+            android:textColor="@color/login_next_color" />
+    </FrameLayout>
+
+</LinearLayout>

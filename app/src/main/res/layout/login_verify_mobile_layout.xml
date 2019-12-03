@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TextSize14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/intput_sms_str"
+        android:textColor="@color/forget_psd_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <EditText
+            android:id="@+id/login_setsms"
+            style="@style/TextSize19"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/login_edittext_normal"
+            android:gravity="center_vertical"
+            android:hint="@string/login_setsms"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/login_getsms"
+            style="@style/TextSize14"
+            android:layout_width="130dp"
+            android:layout_height="37dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/login_button_middle"
+            android:gravity="center"
+            android:text="@string/send_verify_code_str"
+            android:textColor="@color/green_common" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/regist_1"
+        style="@style/TextSize14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="@string/regist_desc1_str"
+        android:textColor="@color/forget_psd_color" />
+
+    <Button
+        android:id="@+id/login_submit"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/verify_mobile_reg_str" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/login_login"
+            style="@style/TextSize14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/login_str"
+            android:textColor="@color/login_next_color" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--颜色定义name="颜色_类别"-->
+    <color name="blue">#7ecdf4</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#333333</color>
+    <color name="gray">#999999</color>
+    <color name="gray_dark">#666666</color>
+    <color name="gray_light">#d6d4d5</color>
+    <color name="gray_backgroud">#f3f3f3</color>
+    <color name="green_common">#69d09e</color>
+    <color name="orange">#ed411f</color>
+    <color name="orange_light">#f66924</color>
+
+    <color name="image_checked_bg">#66000000</color>
+    <color name="forget_psd_color">#757575</color>
+    <color name="login_button_fouse_color">#60c691</color>
+    <color name="login_next_color">#187fc4</color>
+    <color name="line_stroke_color">#e6e6e6</color>
+    <color name="line_bg">#e2e2e2</color>
+    <color name="red">#FFFF0006</color>
+    <color name="send_verify_code">#b3b3b3</color>
+    <color name="SlateGray">#708090</color>
+    <color name="yellow1">#ffc274</color>
+    <color name="yellow2">#d6bc9f</color>
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="titleColor">#333333</color>
+    <color name="divider">#cdcdcd</color>
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+    <color name="province_line_border">#D0D0D0</color>
+
+
+</resources>

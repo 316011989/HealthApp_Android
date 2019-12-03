@@ -1,0 +1,118 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- 统一按钮格式 -->
+    <style name="button_style">
+        <item name="android:background">@drawable/login_button_selector</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 背景边距 -->
+    <style name="homepage_tabs_style">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <!-- 自定义对话框 -->
+    <style name="MyCustomDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!-- 字体控制 -->
+    <style name="TextSize24">
+        <item name="android:textSize">24dp</item>
+    </style>
+
+    <style name="TextSize19">
+        <item name="android:textSize">19dp</item>
+    </style>
+
+    <style name="TextSize18">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="TextSize16">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="TextSize14">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="TextSize12">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="pop_style">
+        <item name="android:windowEnterAnimation">@anim/push_right_in</item>
+        <item name="android:windowExitAnimation">@anim/push_right_out</item>
+    </style>
+    <!-- popupwindow进出动画 -->
+    <style name="popupwindow_anim">
+        <item name="android:windowEnterAnimation">@anim/publishtopic_popup_in</item>
+        <item name="android:windowExitAnimation">@anim/publishtopic_popup_out</item>
+    </style>
+
+    <style name="chat_text_date_style">
+
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/timestampe_bg</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#6ad19d</item>
+    </style>
+    <!-- 预约-预览界面 字体-->
+    <style name="appointment_previewfragment_text_style">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/titleColor</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!--  这个是加入的代码 -->
+    <style name="stepspopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/stepsview_popshow</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/stepsview_pophide</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <!-- Activity主题 -->
+    <style name="activityTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

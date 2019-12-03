@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/appointment_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/appointment_rb_step1"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/appointment_step_selector1"
+            android:drawablePadding="0dp"
+            android:gravity="center_horizontal"
+            android:text="@string/default_string"
+            android:textColor="@color/appointment_step_textcolor_selector" />
+
+        <Button
+            android:id="@+id/appointment_rb_step2"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/appointment_step_selector1"
+            android:gravity="center_horizontal"
+            android:text="@string/default_string"
+            android:textColor="@color/appointment_step_textcolor_selector" />
+
+        <Button
+            android:id="@+id/appointment_rb_step3"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/appointment_step_selector1"
+            android:gravity="center_horizontal"
+            android:text="@string/default_string"
+            android:textColor="@color/appointment_step_textcolor_selector" />
+
+        <Button
+            android:id="@+id/appointment_rb_step4"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/appointment_step_selector1"
+            android:gravity="center_horizontal"
+            android:text="@string/default_string"
+            android:textColor="@color/appointment_step_textcolor_selector" />
+
+        <Button
+            android:id="@+id/appointment_rb_step5"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/appointment_step_selector1"
+            android:gravity="center_horizontal"
+            android:text="@string/default_string"
+            android:textColor="@color/appointment_step_textcolor_selector" />
+
+        <Button
+            android:id="@+id/appointment_rb_step6"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/appointment_step_selector1"
+            android:gravity="center_horizontal"
+            android:text="@string/default_string"
+            android:textColor="@color/appointment_step_textcolor_selector" />
+
+        <Button
+            android:id="@+id/appointment_rb_step7"
+            style="@style/TextSize12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/appointment_step_selector1"
+            android:gravity="center_horizontal"
+            android:text="@string/default_string"
+            android:textColor="@color/appointment_step_textcolor_selector" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/steps_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

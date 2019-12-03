@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/keyword_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/appointment_edittext_shape"
+            android:drawableLeft="@mipmap/additem_search"
+            android:drawablePadding="10dp"
+            android:hint="体检项名称..."
+            android:imeOptions="actionSearch"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cancle_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:text="取消"
+            android:textColor="@color/titleColor"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="体检项筛选"
+        android:textColor="@color/titleColor" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/individual_pay_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/individual_pay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="个人付费"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/individual_pay_cb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:button="@drawable/additem_search_cb_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/individual_pay_rll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/individual_should_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="个人应付："
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/individual_should_pay"
+                android:paddingLeft="10dp">
+
+                <RadioButton
+                    android:id="@+id/whole_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/individual_should_pay"
+                    android:button="@drawable/additem_search_individual_cb_selector"
+                    android:paddingLeft="10dp"
+                    android:text="全部"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/zero_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/whole_price"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/individual_should_pay"
+                    android:button="@drawable/additem_search_individual_cb_selector"
+                    android:paddingLeft="10dp"
+                    android:text="0-50    （元/次）"
+                    android:textColor="@color/titleColor"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/fifty_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zero_price"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/individual_should_pay"
+                    android:button="@drawable/additem_search_individual_cb_selector"
+                    android:paddingLeft="10dp"
+                    android:text="50-100  （元/次）"
+                    android:textColor="@color/titleColor"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/one_hundred_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fifty_price"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/individual_should_pay"
+                    android:button="@drawable/additem_search_individual_cb_selector"
+                    android:paddingLeft="10dp"
+                    android:text="100-150 （元/次）"
+                    android:textColor="@color/titleColor"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/onepointfive_hundred_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/one_hundred_price"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/individual_should_pay"
+                    android:button="@drawable/additem_search_individual_cb_selector"
+                    android:paddingLeft="10dp"
+                    android:text="150-200 （元/次）"
+                    android:textColor="@color/titleColor"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/two_hundred_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/onepointfive_hundred_price"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/individual_should_pay"
+                    android:button="@drawable/additem_search_individual_cb_selector"
+                    android:paddingLeft="10dp"
+                    android:text="200以上 （元/次）"
+                    android:textColor="@color/titleColor"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/individual_pay_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rg_price"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="(全部个人付费，个人+企业付费，个人+新华付费)"
+                android:textColor="@color/titleColor"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:id="@+id/nci_pay_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/nci_pay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="全部新华付费、企业+新华付费"
+                android:textColor="@color/titleColor" />
+
+            <CheckBox
+                android:id="@+id/nci_pay_cb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:button="@drawable/additem_search_cb_selector" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:id="@+id/company_pay_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/company_pay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="全部企业付费、企业+新华付费"
+                android:textColor="@color/titleColor" />
+
+            <CheckBox
+                android:id="@+id/company_pay_cb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:button="@drawable/additem_search_cb_selector" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_light" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/confirm_search"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="确定搜索" />
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/appointment_checkupuser_tip"
+        style="@style/TextSize14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:text="请选择证件类型"
+        android:textColor="@color/gray" />
+
+    <com.pact.healthapp.view.MultipleRadioGroup
+        android:id="@+id/appointment_checkupuser_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appointment_checkupuser_tip"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/appointment_checkupuser_rb1"
+                style="@style/TextSize14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/appointment_certtype1"
+                android:gravity="center_horizontal"
+                android:text="身份证"
+                android:textColor="@color/gray_dark" />
+
+            <Button
+                android:id="@+id/appointment_checkupuser_rb2"
+                style="@style/TextSize14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/appointment_certtype2"
+                android:gravity="center_horizontal"
+                android:text="凭证号"
+                android:textColor="@color/gray_dark" />
+
+            <Button
+                android:id="@+id/appointment_checkupuser_rb3"
+                style="@style/TextSize14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/appointment_certtype3"
+                android:gravity="center_horizontal"
+                android:text="新华体检卡"
+                android:textColor="@color/gray_dark" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/appointment_checkupuser_rb4"
+                style="@style/TextSize14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/appointment_certtype9"
+                android:gravity="center_horizontal"
+                android:text="员工号"
+                android:textColor="@color/gray_dark" />
+
+            <Button
+                android:id="@+id/appointment_checkupuser_rb5"
+                style="@style/TextSize14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/appointment_certtype7"
+                android:gravity="center_horizontal"
+                android:text="医保卡号"
+                android:textColor="@color/gray_dark" />
+
+            <Button
+                android:id="@+id/appointment_checkupuser_rb6"
+                style="@style/TextSize14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/appointment_certtype4"
+
+                android:gravity="center_horizontal"
+                android:text="护照"
+                android:textColor="@color/gray_dark" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/appointment_checkupuser_rb7"
+                style="@style/TextSize14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/appointment_certtype6"
+                android:gravity="center_horizontal"
+                android:text="军官证"
+                android:textColor="@color/gray_dark" />
+
+            <Button
+                android:id="@+id/appointment_checkupuser_rb8"
+                style="@style/TextSize14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/appointment_certtype5"
+                android:gravity="center_horizontal"
+                android:text="新华保险保单号"
+                android:textColor="@color/gray_dark" />
+
+            <Button
+                android:id="@+id/appointment_checkupuser_rb9"
+                style="@style/TextSize14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/appointment_certtype8"
+                android:gravity="center_horizontal"
+                android:text="唯一号"
+                android:textColor="@color/gray_dark" />
+
+
+        </LinearLayout>
+    </com.pact.healthapp.view.MultipleRadioGroup>
+
+    <LinearLayout
+        android:id="@+id/appointment_checkupuser_tip2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appointment_checkupuser_rg"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            style="@style/TextSize14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@mipmap/alert_img"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="当前只可对体检类服务进行预约"
+            android:textColor="@color/gray_dark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_light" />
+    </LinearLayout>
+
+</RelativeLayout>
